@@ -1,0 +1,133 @@
+:root {
+  user-select: none;
+}
+
+nav {
+  background: linear-gradient(90deg, #e22ca3, rgb(193, 27, 222));
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  z-index: 100;
+  box-shadow: 0 5px 40px #00000029;
+} 
+
+h1 {
+  font: 2em sans-serif;
+  margin-left: 1em;
+}
+
+.search {
+  width:40em;
+  height: 2.5em;
+  border: 3px solid #960ac9;
+  margin-left: 15em;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  text-indent: 12px;
+}
+.btn-search {
+  height: 2.4em;
+  width: 4em;
+  margin-left: -10px;
+  background: #960ac9;
+  border: 3px solid #960ac9;
+  border-top-right-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  margin: 6em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 18.7em;
+  width:14em;
+  box-shadow: 0 0 20px #00000055;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 2em;
+}
+
+.foto {
+  height: 11em;
+  width: 100%;
+  background-color: rgb(178, 178, 178);
+  border-top-right-radius : 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
+/*Komentar CSS*/
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.nama {
+  text-align: center;
+  font: 20px sans-serif;
+  margin-top: 10px;
+}
+
+.rating {
+  text-align: center;
+  margin-block: 15px;
+}
+
+.harga {
+  text-align: center;
+  font: 16px sans-serif;
+}
+
+.btn-main {
+  position: relative;
+  background-color: purple;
+  color: white;
+  width: 100%;
+  height: 2.5em;
+  margin-top: 10px;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  margin-top: 0.5em;
+  overflow: hidden;
+}
+
+.btn-main::before {
+  content: "";
+  background: #e22ca3;
+  position: absolute;
+  height: 4em;
+  width: 20em;
+  left: -23em;
+  top: -10px;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.btn-main:hover {
+  color: white;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.btn-main:hover::before {
+  left: -20px;
+  transition: 0.7s ease; 
+}
